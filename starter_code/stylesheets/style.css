@@ -9,171 +9,380 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-/* reseting HTML default margin */
-
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header,
+nav {
+  background-color: #540b51;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+nav img {
+  width: 100px;
+}
+
+.nav-button,
+.nav-button img {
+  height: 25px;
+  width: 25px;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+}
+
+header {
+  padding-top: 90px;
+  color: white;
+  text-align: center;
+}
+
+header p span {
+  color: #ecb12f;
+  font-weight: 700;
+}
+
+#header-buttons button {
+  width: 390px;
+  height: 60px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#header-buttons {
+  margin-bottom: 20px;
+}
+
+.btn-email {
+  color: #540b51;
+}
+
+.btn-google {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  background-color: #4285f4;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-google img {
+  width: 30px;
+  background-color: white;
+  border-radius: 2px;
+  margin: 6px;
+  padding: 7px;
+}
+
+.btn-google span {
+  color: white;
+  text-align: center;
+}
+
+#section1,
+#section2,
+#section3,
+#section4 {
+  background-color: #f3eae2;
+}
+
+#section1 p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.section1-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section1-img img {
+  height: 32px;
+}
+
+.section2-text {
+  padding: 15px;
+  text-align: left;
+}
+
+.section2-text a {
+  text-decoration: none;
+  color: #4285f4;
   font-weight: 600;
 }
 
-/* setting up navbar */
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-  background-color: #540b51;
-}
-.slack-logo {
-  width: 100px;
-  padding-left: 30px;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-  height: 80px;
-}
-
-.nav-links > ul {
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-links > ul > li {
+.section5-list {
+  padding: 20px 70px;
   list-style: none;
 }
 
-.nav-links > ul > li > a {
-  text-decoration: none;
+#section5 .section5-text {
+  font-weight: 900;
+  font-size: 15px;
+  padding: 0 50px;
+}
+
+#section5 span {
+  color: #540b51;
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+
+#section6 {
+  background-color: #540b51;
+  height: 50vh;
+  border-radius: 2000px 2000px / 0px 0px 300px 300px;
+}
+
+#section6 h3 {
   color: white;
-  padding-right: 30px;
 }
 
-.nav-right {
-  width: 100%;
-  padding-right: 30px;
+footer {
+  padding: 15px;
+}
+
+footer img {
+  width: 60px;
+}
+
+.footer-list {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 
-.nav-right > button {
-  border: none;
-  background: none;
-}
-
-.nav-right > ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.nav-right > ul > li {
+.footer-list ul {
   list-style: none;
 }
 
-.nav-right > ul > li > a {
-  text-decoration: none;
-  color: white;
-  margin-right: 30px;
+.list-title {
+  font-weight: 900;
+  font-size: 1rem;
 }
-
-.try-link {
-  border: 10px solid white;
-  border-radius: 4px;
-  background-color: white;
-  padding: 2px 10px 2px 10px;
-}
-
-.burger-menu {
-  display: none;
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  background-color: #540b51;
-  padding-left: 100px;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  padding-right: 150px;
-}
-
-.header > div > h1 {
-  color: white;
-  font-size: 85px;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 700px;
-}
-
-.header > div > img {
-  width: 600px;
-  padding-top: 50px;
-}
-
-.header > div > p {
-  padding-top: 80px;
-  font-size: 23.5px;
-}
-
-.button-signup {
-  border: none;
-  width: 300px;
-  height: 60px;
-  background-color: white;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 17px;
-  color: #540b51;
-}
-
-.button-google {
-  border: none;
-  width: 300px;
-  height: 60px;
-  background-color: white;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 17px;
-  color: #540b51;
-}
-
-.button-google > img {
-  height: 30px;
-  background-color: white;
-  border-radius: 4px;
-  display: flex;
-  justify-content: flex-start;
-  margin: 0px 20px 0px 5px;
+.footer-list li {
+  font-size: 0.8rem;
   padding: 10px;
 }
 
-.button-box {
-  width: 650px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+hr {
+  border: 1px solid #f0f0f0;
 }
 
-.slackisfree-p {
-  color: white;
-  padding: 80px 0px 30px 20px;
+.footer-info li {
+  font-size: 0.8rem;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-links {
+.footer-info .download {
+  color: #2e71a6;
+}
+small {
+  color: #454245;
+  font-size: 0.7rem;
+  padding-bottom: 40px;
+}
+
+@media screen and (width < 768px) {
+  #nav-list {
     display: none;
   }
-  /* .nav-right {
-    display: none;
-  } */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header p {
+    padding: 20px;
+    font-size: 1rem;
+  }
+  #header-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  #header-img {
+    width: 100vw;
+    height: 30vh;
+    /* height: 340px; */
+  }
+
+  #header-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -320%;
+  }
+
+  #section1 {
+    padding: 20px;
+  }
+
+  #section2 img,
+  #section3 img,
+  #section4 img {
+    width: 100vw;
+  }
+
+  #section2,
+  #section3,
+  #section4 {
+    padding-bottom: 30px;
+  }
+
+  .mobile-image {
+    background-image: url("../images/flexibility-mobile.png");
+    width: 100vw;
+  }
+
+  .section2-text {
+    padding: 15px 40px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .section2-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .section2-text p {
+    line-height: 20px;
+    font-size: 1rem;
+  }
+
+  #section3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #section5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .section5-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section5-buttons button {
+    width: 400px;
+    height: 60px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
+
+  .section5-enterprise {
+    background-color: #540b51;
+    color: white;
+    border: none;
+  }
+
+  .section5-sales {
+    background-color: white;
+    color: #540b51;
+    border: none;
+    border: 1px solid #540b51;
+  }
+
+  #section5 h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 30px 30px 10px 30px;
+  }
+
+  #section5 p {
+    line-height: 25px;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 15px;
+  }
+
+  #section6 h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .section6-buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px 30px;
+  }
+
+  .section6-buttons button {
+    width: 400px;
+    height: 60px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
+
+  .section6-free {
+    border: none;
+    background-color: white;
+    color: #540b51;
+    border-radius: 5px;
+  }
+
+  .section6-sales {
+    border: 1px solid white;
+    background-color: #540b51;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .footer-info {
+    list-style: none;
+    font-weight: 700;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-info img {
+    width: 15px;
+    padding-right: 10px;
+  }
+
+  .footer-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    font-size: 1.5rem;
+    list-style: none;
+  }
 }

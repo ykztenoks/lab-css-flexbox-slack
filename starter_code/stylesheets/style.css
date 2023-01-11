@@ -56,16 +56,20 @@ header p span {
   font-weight: 700;
 }
 
-#header-buttons button {
-  width: 390px;
+.header-buttons button {
+  width: 90vw;
   height: 60px;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-#header-buttons {
+.header-buttons {
   margin-bottom: 20px;
+}
+
+.landing {
+  margin-bottom: -30px;
 }
 
 .btn-email {
@@ -94,14 +98,14 @@ header p span {
   text-align: center;
 }
 
-#section1,
-#section2,
-#section3,
-#section4 {
+.section1,
+.section2,
+.section3,
+.section4 {
   background-color: #f3eae2;
 }
 
-#section1 p {
+.section1 p {
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
@@ -136,25 +140,25 @@ header p span {
   list-style: none;
 }
 
-#section5 .section5-text {
+.section5 .section5-text {
   font-weight: 900;
   font-size: 15px;
   padding: 0 50px;
 }
 
-#section5 span {
+.section5 span {
   color: #540b51;
   font-size: 2.7rem;
   font-weight: 900;
 }
 
-#section6 {
+.section6 {
   background-color: #540b51;
   height: 50vh;
   border-radius: 2000px 2000px / 0px 0px 300px 300px;
 }
 
-#section6 h3 {
+.section6 h3 {
   color: white;
 }
 
@@ -203,7 +207,7 @@ small {
 }
 
 @media screen and (width < 768px) {
-  #nav-list {
+  .nav-list {
     display: none;
   }
   nav {
@@ -218,44 +222,54 @@ small {
     padding: 20px;
     font-size: 1rem;
   }
-  #header-buttons {
+  .header-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    margin: 0 20px;
   }
 
-  #header-img {
-    width: 100vw;
-    height: 30vh;
-    /* height: 340px; */
+  .header-img {
+    background-image: url("../images/hero-product-ui.png");
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -40px;
+    background-position-y: 60px;
+    max-width: 100vw;
+    height: 45vh;
   }
 
-  #header-img img {
-    width: 100%;
+  .header-img img {
+    display: none;
+    /* max-width: 100%;
+    border-bottom: #f3eae2 solid 100px;
+    padding: 50px 0 0 0;
     height: 100%;
     object-fit: cover;
-    object-position: -320%;
+    object-position: -320%; */
   }
 
-  #section1 {
-    padding: 20px;
+  .section1 {
+    padding: 50px 10px;
   }
 
-  #section2 img,
-  #section3 img,
-  #section4 img {
+  .section2 img,
+  .section3 img,
+  .section4 img {
     width: 100vw;
   }
 
-  #section2,
-  #section3,
-  #section4 {
+  .section2,
+  .section3,
+  .section4 {
     padding-bottom: 30px;
   }
 
   .mobile-image {
     background-image: url("../images/flexibility-mobile.png");
+
     width: 100vw;
   }
 
@@ -274,12 +288,12 @@ small {
     font-size: 1rem;
   }
 
-  #section3 {
+  .section3 {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  #section5 {
+  .section5 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -314,20 +328,20 @@ small {
     border: 1px solid #540b51;
   }
 
-  #section5 h3 {
+  .section5 h3 {
     font-size: 1.8rem;
     text-align: center;
     padding: 30px 30px 10px 30px;
   }
 
-  #section5 p {
+  .section5 p {
     line-height: 25px;
     font-size: 1.1rem;
     text-align: center;
     padding: 15px;
   }
 
-  #section6 h3 {
+  .section6 h3 {
     font-size: 2rem;
     text-align: center;
     padding-top: 50px;
